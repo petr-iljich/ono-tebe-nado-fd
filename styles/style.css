@@ -1,1 +1,162 @@
-/* место для вашего кода */
+body {
+  margin: auto;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  background-color: black;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul,
+ol,
+blockquote {
+    margin: 0;
+    padding: 0;
+    /* перепроверить */
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items:center;
+  padding: 92px 50px 96px;
+  background: white;
+}
+
+.header__menu {
+}
+
+.header__links-list {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.header__links-list-item {}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {}
+
+.header__link {}
+
+.header__logo { 
+  display: block;
+  width: 148px;
+  min-height: 105px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.header__logo-image {
+  
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.main {
+  background: white;
+  padding: 0;
+}
+
+.overlay {}
+
+.over__title {}
+
+.aligned-text {}
+
+.aligned-text_center {}
+
+.aligned-text_right {}
+
+.letter-spacing-extended {}
+
+.no-letter-spacing {}
+
+.cover__description {}
+
+.cover__description-text {}
+
+.bet-button {}
+
+.lots {
+  background: white;
+  padding: 0;
+}
+
+.lots__heading {}
+
+.lots__card-list {}
+
+.lots__card-list-item {}
+
+.card-link {}
+
+.card {}
+
+.card_type_film {}
+
+.card_type_book {}
+
+.card_type_picture {}
+
+.card__title {}
+
+.card__text {}
+
+.lots__look-more-link {}
+
+.about {
+  background: white;
+  padding: 0;
+}
+
+.about__column {}
+
+.about__logo {
+  display: block;
+  width: 240px;
+  min-height: 240px;
+}
+
+.about__logo-image {}
+
+.about__title {}
+
+.about__text {}
+
+.footer {
+  display: grid;
+  background: white;
+  padding: 0;
+}
+
+.footer__address {} /* или взять от хэдера? */
+
+.footer__menu {}
+
+.footer__menu-list {}
+
+.footer__menu-list-item {}
+
+.footer__menu-link {}
+
+.footer__menu-link_active {}
+
+.footer__social-list {}
+
+.footer__social-list-item {}
+
+.footer__social-link {}
+
+.footer__social-icon {}
