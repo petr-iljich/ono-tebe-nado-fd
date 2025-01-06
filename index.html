@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body>
-    <header class="header content-section">
+    <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-            <li class="header__links-list-item header__links-list-item_no-bullit header__link_active">
+            <li class="header__links-list-item links-list-item_no-bullit link_active">
                 <a class="header__link">Главная</a>
             </li>
             <li class="header__links-list-item">
@@ -31,15 +31,18 @@
         alt="Логотип проекта черный"
         >
       </a>
-      <div class="header__address">
-        <span>+9 999 555 5555</span> <!--класс для спана?-->
-        <span>info@sobaka.ge</span> <!--класс для спана?-->
-        <span>наб. Принсенграхт 263-</span> <!--класс для спана?-->
-        <span>265, Амстердам</span> <!--класс для спана?-->
-      </div>
+      <address class="header__address">
+          <a href="tel:+70000000">+9 999 555 5555</a><br />        
+          <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
+          наб. Принсенграхт 263-<br />
+          265, Амстердам<br />
+      </address>
     </header>
     <main class="main">
-      <cover class="overlay"> <!-- Перепроверить -->
+      <cover class="cover">
+        <img class="overlay"
+          src="./images/cover.jpg"
+        />
         <h1 class="cover__title">
           <span class="aligned-text letter-spacing-extended">Оно</span>
           <span class="aligned-text_center letter-spacing-extended">тебе</span>
@@ -59,9 +62,11 @@
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <a class="card-link">
+            <a class="card-link" href="#">
               <article class="card">
-                <img class="card_type_film"/> <!-- Дополнить -->
+                <img class="card_type_film overlay"
+                src="./images/card-lot-01.jpg"
+                />
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -74,9 +79,10 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link">
+            <a class="card-link" href="#">
               <article class="card">
-                <img class="card_type_book"/> <!-- Дополнить -->
+                <img class="card_type_book overlay"
+                src="./images/card-lot-02.jpg"/>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -94,9 +100,10 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link">
+            <a class="card-link" href="#">
               <article class="card">
-                <img class="card_type_picture"/> <!-- Дополнить -->
+                <img class="card_type_picture overlay"
+                src="./images/card-lot-03.jpg"/>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний 
                   сын маминой подруги
@@ -116,19 +123,20 @@
         <a class="lots__look-more-link" href="#">Посмотреть больше</a> <!-- Перепроверить -->
       </lots>
       <about class="about">
-        <div class="about__column">
+        <div class="about__column-left">
           <a class="about__logo">
             <img 
             class="about__logo-image" 
             src="./images/logo-white.svg" 
             alt="Логотип проекта белый"
-            >
+            />
+          </a>
         </div>
-        <div class="about__column">
+        <div class="about__column-right">
           <h4 class="about__title">
             Об аукционе
           </h4>
-          <p class="about__text">
+          <p class="about__text first-paragraph">
             Здесь вы не встретите очередное пафосное 
             собрание невероятно дорогого антиквариата. 
             Наши лоты вообще не должны были попасть ни 
@@ -152,52 +160,53 @@
       </about>
     </main>
     <footer class="footer">
-      <address class="footer__address">
-        <span>+9 999 555 5555</span> <!--класс для спана?-->
-        <span>info@sobaka.ge</span> <!--класс для спана?-->
-        <span>наб. Принсенграхт 263-265,</span> <!--класс для спана?-->
-        <span>Амстердам</span> <!--класс для спана?-->
-      </address> <!-- Перепроверить класс -->
+      <div class="footer__address">
+        <a href="tel:+70000000">+9 999 555 5555</a><br />        
+        <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
+        наб. Принсенграхт 263-265,<br />
+        Амстердам<br />
+      </div>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item">
-            <a class="footer__menu-link footer__menu-link_active">Главная</a>
+          <li class="footer__menu-list-item link_active links-list-item_no-bullit">
+            <a class="footer__menu-link">Главная</a>
           </li>
-          <li class="footer__menu-list-item">
+          <li class="footer__menu-list-item links-list-item_no-bullit">
             <a class="footer__menu-link" href="#0">Посмотреть лоты</a>
           </li>
-          <li class="footer__menu-list-item">
+          <li class="footer__menu-list-item links-list-item_no-bullit">
             <a class="footer__menu-link" href="#0">Об аукционе</a>
           </li>
         </ul>
-        <!--header__links-list-item_no-bullit — этот класс может потребоваться, чтобы сделать ссылку без кружочка;-->
       </nav>
       <ul class="footer__social-list">
-        <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#">Ютуб</a>
-          <img 
+        <li class="footer__social-list-item links-list-item_no-bullit">
+          <a class="footer__social-link" href="#">
+            <img 
             class="footer__social-icon" 
             src="./images/yt.svg" 
             alt="Логотип Ютуб"
             >
+          </a>
         </li>
-        <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#">Вк</a>
-          <img 
+        <li class="footer__social-list-item links-list-item_no-bullit">
+          <a class="footer__social-link" href="#">
+            <img 
             class="footer__social-icon" 
             src="./images/vk.svg" 
             alt="Логотип Вк"
             >
+          </a>
         </li>
-        <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#">Пинтерест</a>
-          <img 
+        <li class="footer__social-list-item links-list-item_no-bullit">
+          <a class="footer__social-link" href="#">
+            <img 
             class="footer__social-icon" 
             src="./images/pinterest.svg" 
             alt="Логотип Пинтерест"
             >
+          </a>
         </li>
-        <!--header__links-list-item_no-bullit — этот класс может потребоваться, чтобы сделать ссылку без кружочка;-->
       </ul>
     </footer>
   </body>
