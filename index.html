@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body>
-    <img class="pixel-perfect-image">
-    <header class="header">
-      <nav class="header__menu">
+    <header class="header background">
+      <nav>
         <ul class="header__links-list">
             <li class="header__links-list-item links-list-item_no-bullit link_active">
                 <a class="header__link">Главная</a>
@@ -26,45 +25,39 @@
         </ul>
       </nav>
       <a class="header__logo">
-        <img 
-        class="header__logo-image"
+        <img class="header__logo-image"
         src="./images/logo-black.svg"
         alt="Логотип проекта черный"
         >
       </a>
       <address class="header__address">
-          <a class="text-underline-offset" href="tel:+70000000">+9 999 555 5555</a><br />        
-          <a class="text-underline-offset" href="mailto:mail@example.com">info@sobaka.ge</a><br />      
+          <a href="tel:+70000000">+9 999 555 5555</a><br />        
+          <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
           наб. Принсенграхт 263-<br />
           265, Амстердам<br />
       </address>
     </header>
-    <main class="main">
-      <cover class="cover">
-        <img class="overlay"
-          src="./images/cover.jpg"
-        />
+    <main>
+      <cover class="cover background">
+        <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text letter-spacing-extended">Оно</span>
           <span class="aligned-text_center letter-spacing-extended">тебе</span>
           <span class="aligned-text_right letter-spacing-extended">надо</span>
         </h1>
         <div class="cover__description">
-          <p class="cover__description-text">
-            Аукцион вещей, в которые никто не верил
-          </p>
-          <a class="bet-button" href="#">
-            Сделать ставку
-          </a>
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <a class="bet-button" href="#">Сделать ставку</a>
         </div>
       </cover>
-      <lots class="lots">
+      <lots class="lots background">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
               <article class="card">
-                <img class="card_type_film card__overlay"/>
+                <div class="overlay"></div>
+                <img class="card_type_film"/>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -79,7 +72,8 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
               <article class="card">
-                <img class="card_type_book card__overlay"/>
+                <div class="overlay"></div>
+                <img class="card_type_book"/>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -99,7 +93,8 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
               <article class="card">
-                <img class="card_type_picture card__overlay"/>
+                <div class="overlay"></div>
+                <img class="card_type_picture"/>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний 
                   сын маминой подруги
@@ -118,7 +113,7 @@
         </ul>
         <a class="lots__look-more-link" href="#">Посмотреть больше</a> <!-- Перепроверить -->
       </lots>
-      <about class="about">
+      <about class="about background">
         <div class="about__column-left">
           <a class="about__logo">
             <img 
@@ -155,7 +150,7 @@
         </div>
       </about>
     </main>
-    <footer class="footer">
+    <footer class="footer background">
       <div class="footer__address">
         <a class="text-underline-offset" href="tel:+70000000">+9 999 555 5555</a><br />        
         <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
