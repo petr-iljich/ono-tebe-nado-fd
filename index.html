@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body>
-    <header class="header background">
+    <header class="header">
       <nav>
         <ul class="header__links-list">
             <li class="header__links-list-item links-list-item_no-bullit link_active">
@@ -30,7 +30,7 @@
         alt="Логотип проекта черный"
         >
       </a>
-      <address class="header__address">
+      <address class="address">
           <a href="tel:+70000000">+9 999 555 5555</a><br />        
           <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
           наб. Принсенграхт 263-<br />
@@ -38,7 +38,7 @@
       </address>
     </header>
     <main>
-      <cover class="cover background">
+      <cover class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text letter-spacing-extended">Оно</span>
@@ -50,14 +50,13 @@
           <a class="bet-button" href="#">Сделать ставку</a>
         </div>
       </cover>
-      <lots class="lots background">
+      <lots class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card">
+              <article class="card card_type_film">
                 <div class="overlay"></div>
-                <img class="card_type_film"/>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -71,9 +70,8 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card">
+              <article class="card card_type_book">
                 <div class="overlay"></div>
-                <img class="card_type_book"/>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -92,9 +90,8 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card">
+              <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <img class="card_type_picture"/>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний 
                   сын маминой подруги
@@ -113,7 +110,7 @@
         </ul>
         <a class="lots__look-more-link" href="#">Посмотреть больше</a> <!-- Перепроверить -->
       </lots>
-      <about class="about background">
+      <about class="about">
         <div class="about__column-left">
           <a class="about__logo">
             <img 
@@ -150,8 +147,8 @@
         </div>
       </about>
     </main>
-    <footer class="footer background">
-      <div class="footer__address">
+    <footer class="footer">
+      <div class="address footer__address">
         <a class="text-underline-offset" href="tel:+70000000">+9 999 555 5555</a><br />        
         <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
         наб. Принсенграхт 263-265,<br />
@@ -159,20 +156,20 @@
       </div>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item link_active links-list-item_no-bullit">
-            <a class="footer__menu-link">Главная</a>
+          <li class="link_active links-list-item_no-bullit">
+            <a>Главная</a>
           </li>
-          <li class="footer__menu-list-item links-list-item_no-bullit">
-            <a class="footer__menu-link" href="#0">Посмотреть лоты</a>
+          <li class="links-list-item_no-bullit">
+            <a href="#0">Посмотреть лоты</a>
           </li>
-          <li class="footer__menu-list-item links-list-item_no-bullit">
-            <a class="footer__menu-link" href="#0">Об аукционе</a>
+          <li class="links-list-item_no-bullit">
+            <a href="#0">Об аукционе</a>
           </li>
         </ul>
       </nav>
       <ul class="footer__social-list">
-        <li class="footer__social-list-item links-list-item_no-bullit">
-          <a class="footer__social-link" href="#">
+        <li class="links-list-item_no-bullit">
+          <a href="#">
             <img 
             class="footer__social-icon" 
             src="./images/yt.svg" 
@@ -180,8 +177,8 @@
             >
           </a>
         </li>
-        <li class="footer__social-list-item links-list-item_no-bullit">
-          <a class="footer__social-link" href="#">
+        <li class="links-list-item_no-bullit">
+          <a href="#">
             <img 
             class="footer__social-icon" 
             src="./images/vk.svg" 
@@ -189,8 +186,8 @@
             >
           </a>
         </li>
-        <li class="footer__social-list-item links-list-item_no-bullit">
-          <a class="footer__social-link" href="#">
+        <li class="links-list-item_no-bullit">
+          <a href="#">
             <img 
             class="footer__social-icon" 
             src="./images/pinterest.svg" 

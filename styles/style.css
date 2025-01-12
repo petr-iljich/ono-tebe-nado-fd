@@ -15,12 +15,8 @@ p,
 ul,
 ol,
 blockquote {
-    margin: 0;
-    padding: 0;
-}
-
-.background {
-  background: white
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -65,7 +61,7 @@ blockquote {
   padding-left: 2px;
 }
 
-.header__address {
+.address {
   display: block;
   justify-self: end;
   max-width: 240px;
@@ -83,9 +79,9 @@ blockquote {
   background-image: url(../images/cover.jpg);
   width: 1100px;
   height: 757px;
-  margin-bottom: 180px;
   background-position: center;
   background-size: cover;
+  margin-bottom: 180px;
 }
 
 .overlay {
@@ -105,7 +101,7 @@ blockquote {
   color: #ffffff;
   line-height: 115px;
   text-transform: uppercase;
-  padding: 165px 50px 207px;
+  padding: 165px 50px;
 }
 
 .aligned-text {
@@ -138,7 +134,7 @@ blockquote {
   width: 100%;
   height: 51px;
   padding-left: 50px;
-  margin-top: -100px;
+  margin-top: -60px;
 }
 
 .cover__description-text {
@@ -150,26 +146,26 @@ blockquote {
   font-size: 22px;
   line-height: 28px;
   word-spacing: 18px;
-  padding: 0;
-  margin-bottom: 0;
   text-transform: uppercase;
   z-index: 1;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .bet-button {
   display: block;
+  width: 256px;
   color: #ffffff;
   font-weight: 500;
   font-size: 22px;
-  line-height: 28px;
-  width: 256px;
-  margin-right: 50px;
-  padding: 10px 31px;
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 28px;
   border: 1px solid #ffffff;
   background-color: transparent;
   z-index: 1;
+  margin-right: 50px;
+  padding: 10px 31px;
 }
 
 .lots {
@@ -235,16 +231,6 @@ blockquote {
   background-size: cover;
 }
 
-/*.card__overlay {
-  display: block;
-  position: absolute;
-  z-index: 0;
-  background-size: cover;
-  background-position: center;
-  width: 334px;
-  min-height: 596px;
-}*/
-
 .card__title {
   z-index: 1;
   color: #ffffff;
@@ -286,7 +272,7 @@ blockquote {
   margin-left: 22.5px;
   margin-right: 24px;
   position: relative;
-  top: 875px;
+  top: 878px;
 }
 
 .about__column-left {
@@ -300,8 +286,6 @@ blockquote {
 .about__column-right {
   display: flex;
   flex-direction: column;
-  /*justify-content: start;
-  align-items: start;*/
   margin-top: -35px;
 }
 
@@ -354,17 +338,9 @@ blockquote {
 }
 
 .footer__address {
-  display: block;
-  min-width: 240px;
-  padding-left: 48px;
-  font-size: 18px;
-  line-height: 24.3px;
-  font-style: normal;
-  justify-self: start;
-  text-underline-offset: 4px;
+  justify-self: center;
+  margin-top: 1px;
 }
-
-/*.footer__menu {}*/
 
 .footer__menu-list {
   display: flex;
@@ -373,12 +349,8 @@ blockquote {
   text-transform:lowercase;
   font-size: 18px;
   line-height: 21.13px;
-  text-underline-offset: 4px;
+  text-underline-offset: 3.3px;
 }
-
-/*.footer__menu-list-item {}
-
-.footer__menu-link {}*/
 
 .footer__social-list {
   display: flex;
@@ -387,10 +359,6 @@ blockquote {
   gap: 48px;
   margin-right: -34px;
 }
-
-/*.footer__social-list-item {}
-
-.footer__social-link {}*/
 
 .footer__social-icon {
   width: 48px;
