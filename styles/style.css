@@ -1,29 +1,13 @@
 body {
-  margin: auto;
   font-family: Raleway, sans-serif;
   font-weight: 400;
   background-color: white;
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p, 
-ul,
-ol,
-blockquote {
-  margin: 0;
-  padding: 0;
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items:center;
-  height: 293px;
   padding: 92px 50px 96px;
 }
 
@@ -34,7 +18,6 @@ blockquote {
   align-items: center;
   gap: 32px;
   list-style:circle;
-  margin-top: -4px;
   text-underline-offset: 3px;
 }
 
@@ -68,7 +51,6 @@ blockquote {
   font-size: 18px;
   font-style: normal;
   line-height: 25px;
-  margin-top: -4px;
   margin-right: 34px;
   text-underline-offset: 3.3px;
 }
@@ -78,7 +60,7 @@ blockquote {
   position: relative;
   background-image: url(../images/cover.jpg);
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   background-position: center;
   background-size: cover;
   margin-bottom: 180px;
@@ -101,40 +83,38 @@ blockquote {
   color: #ffffff;
   line-height: 115px;
   text-transform: uppercase;
-  padding: 165px 50px;
+  padding: 165px 50px 88px;
 }
 
 .aligned-text {
   display: block;
+  margin-bottom: 20px;
 }
 
 .aligned-text_center {
-  display: block;
   text-align: center;
-  margin-top: 20.3px;
   margin-left: 32px;
 }
 
 .aligned-text_right {
-  display: block;
   text-align: right;
-  margin-top: 21px;
-  margin-right: -32px;
-  padding: 0;
 }
 
 .letter-spacing-extended {
   letter-spacing: 30px;
 }
 
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
 .cover__description {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 107px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
   width: 100%;
-  height: 51px;
   padding-left: 50px;
-  margin-top: -60px;
+  padding-right: 50px;
 }
 
 .cover__description-text {
@@ -145,17 +125,17 @@ blockquote {
   color: #ffffff;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 18px;
+  word-spacing: 18.5px;
   text-transform: uppercase;
   z-index: 1;
-  padding: 0;
-  margin-bottom: 0;
 }
 
 .bet-button {
   display: block;
-  width: 256px;
+  justify-self: center;
+  align-self: center;
   color: #ffffff;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
@@ -164,15 +144,12 @@ blockquote {
   border: 1px solid #ffffff;
   background-color: transparent;
   z-index: 1;
-  margin-right: 50px;
-  padding: 10px 31px;
+  padding: 11px 31px;
 }
 
 .lots {
   display: block;
-  margin: 0 24px;
-  position: absolute;
-  min-height: 723px;
+  margin: 0 24px 120px;
 }
 
 .lots__heading {
@@ -186,18 +163,14 @@ blockquote {
 .lots__card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 25px;
-  margin: 0;
-  padding: 0;
+  gap: 25px;
 }
 
 .lots__card-list-item {
   display: flex;
   flex-direction:column;
   width: 334px;
-  height: 596px;
-  margin: 0;
-  padding: 0;
+  min-height: 596px;
 }
 
 .card-link {
@@ -213,22 +186,21 @@ blockquote {
   height: 100%;
 }
 
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+.card_type_background {
   background-position: center;
   background-size: cover;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -268,45 +240,33 @@ blockquote {
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 0;
-  margin-left: 22.5px;
+  margin-left: 24px;
   margin-right: 24px;
-  position: relative;
-  top: 878px;
+  margin-bottom: 180px;
 }
 
-.about__column-left {
+.about__column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  height: 240px;
-}
-
-.about__column-right {
-  display: flex;
-  flex-direction: column;
-  margin-top: -35px;
+  gap: 24px;
 }
 
 .about__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding-top: 35px;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: black;
+  padding-top: 35px;
+  margin: 35px 46px;
 }
 
 .about__logo-image {
   display: block;
   width: 148px;
   height: 114px;
-  justify-self: center;
-  align-self: center;
   margin-bottom: 33px;
 }
 
@@ -316,25 +276,18 @@ blockquote {
   text-transform: uppercase;
   line-height: 46.96px;
   margin-top: 136px;
-  margin-bottom: 100px;
+  margin-bottom: 76px;
 }
 
 .about__text {
   font-size: 20px;
   line-height: 24px;
-  margin-top: 0;
-}
-
-.first-paragraph {
-  margin-bottom: 24px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  position: relative;
-  min-height: 180px;
-  top: 1058px;
+  padding-bottom: 82px;
 }
 
 .footer__address {
@@ -354,10 +307,9 @@ blockquote {
 
 .footer__social-list {
   display: flex;
-  flex-direction: row;
   justify-self: center;
   gap: 48px;
-  margin-right: -34px;
+  padding-left: 30px;
 }
 
 .footer__social-icon {

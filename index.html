@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body>
     <header class="header">
@@ -38,24 +38,24 @@
       </address>
     </header>
     <main>
-      <cover class="cover">
+      <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text letter-spacing-extended">Оно</span>
-          <span class="aligned-text_center letter-spacing-extended">тебе</span>
-          <span class="aligned-text_right letter-spacing-extended">надо</span>
+          <span class="aligned-text aligned-text_center letter-spacing-extended">тебе</span>
+          <span class="aligned-text aligned-text_right letter-spacing-extended">над<span class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
           <a class="bet-button" href="#">Сделать ставку</a>
         </div>
-      </cover>
-      <lots class="lots">
+      </section>
+      <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card card_type_film">
+              <article class="card card_type_background card_type_film">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -70,7 +70,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card card_type_book">
+              <article class="card card_type_background card_type_book">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -90,7 +90,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
-              <article class="card card_type_picture">
+              <article class="card card_type_background card_type_picture">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний 
@@ -108,10 +108,10 @@
             </a>
           </li>
         </ul>
-        <a class="lots__look-more-link" href="#">Посмотреть больше</a> <!-- Перепроверить -->
-      </lots>
-      <about class="about">
-        <div class="about__column-left">
+        <a class="lots__look-more-link" href="#">Посмотреть больше</a>
+      </section>
+      <section class="about">
+        <div class="about__column">
           <a class="about__logo">
             <img 
             class="about__logo-image" 
@@ -120,11 +120,11 @@
             />
           </a>
         </div>
-        <div class="about__column-right">
-          <h4 class="about__title">
+        <div class="about__column">
+          <h2 class="about__title">
             Об аукционе
-          </h4>
-          <p class="about__text first-paragraph">
+          </h2>
+          <p class="about__text">
             Здесь вы не встретите очередное пафосное 
             собрание невероятно дорогого антиквариата. 
             Наши лоты вообще не должны были попасть ни 
@@ -145,15 +145,15 @@
             И сейчас эти лоты стали культовыми.
           </p>
         </div>
-      </about>
+      </section>
     </main>
     <footer class="footer">
-      <div class="address footer__address">
-        <a class="text-underline-offset" href="tel:+70000000">+9 999 555 5555</a><br />        
+      <address class="address footer__address">
+        <a href="tel:+70000000">+9 999 555 5555</a><br />        
         <a href="mailto:mail@example.com">info@sobaka.ge</a><br />      
         наб. Принсенграхт 263-265,<br />
         Амстердам<br />
-      </div>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="link_active links-list-item_no-bullit">
